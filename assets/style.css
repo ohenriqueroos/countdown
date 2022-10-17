@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #f7f7f7;
+  --primary-color: #a300bf;
+  --secondary-color: #ff006f;
+  --text-color: #fff;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-color);
+  display: flex;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  letter-spacing: -.05rem;
+  line-height: 2.5rem;
+  color: var(--primary-color);
+}
+
+h4 {
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: -.05rem;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+span {
+  font-size: 1.3rem;
+}
+
+input {
+  padding-left: .5rem;
+  width: 20rem;
+  height: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: .9rem;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid var(--primary-color);
+  background-color: var(--background-color);
+  outline: none;
+  transition: ease-out 0.2s;
+}
+
+input:focus {
+  border-bottom: 3px solid var(--secondary-color);
+  font-weight: 700;
+}
+
+.btn-primary {
+  width: 8rem;
+  height: 1.8rem;
+  font-size: .9rem;
+  font-weight: 700;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border-radius: .5rem;
+  transition: ease-out .2s;
+}
+
+.btn-primary:hover {
+  width: 14rem;
+  background-color: var(--secondary-color);
+}
+
+
+.btn-secondary {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  fill: var(--text-color);
+  border-radius: 5rem;
+  transition: ease-out 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary-color);
+}
+
+/* Section Countdown */
+#countdown {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container {
+  padding: 4rem 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .timer-title {
+  display: flex;
+} */
+
+/* .timer-countdown {
+  display: flex;
+} */
+
+#title-days, #title-hours, #title-minutes, #title-seconds {
+  width: 7rem;
+  text-align: center;
+}
+
+#days, #hours, #minutes, #seconds {
+  width: 7rem;
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.call-to-action {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+/* Section Image Astronaut */
+#image-astronaut {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#image-astronaut img {
+  height: 35rem;
+  width: auto;
+}
+
+/* Modal */
+.modal {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  z-index: 1;
+}
+
+.close {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+/* Responsive */
+@media (max-width: 800px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #countdown {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0; 
+  }
+
+  #title-days, #title-hours, #title-minutes, #title-seconds {
+    width: 6rem;
+    text-align: center;
+  }
+
+  #image-astronaut {
+    display: none;
+  }
+
+  .timer-section{
+    min-width: 50%;
+    float: left;
+  } 
+}
+
+@media (min-width: 801px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    width: 100%;
+    padding: 5rem 3rem; 
+  }
+
+
+
+  .timer-title {
+    display: flex;
+  }
+}
+
+/* @media (min-width: 880) {
+  .container {
+    width: 100%;
+    padding: 0; 
+  }
+
+  #countdown {
+    padding: 0 4rem;
+  }
+} */

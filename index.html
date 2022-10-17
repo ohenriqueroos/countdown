@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
+  <title>Countdown</title>
+  <link rel="icon" type="imagem/svg" href="assets/img/astronaut_saturn.svg" />
+  <!-- Import Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+  <!-- Import CSS -->
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <section id="countdown">
+    <div class="container">
+      <!-- Title -->
+      <div class="title">
+        <h1>A new era is coming soon...</h1>
+        <span>Don't loose this oportunity!</span>
+      </div>
+      <!-- Timer/Clock -->
+      <div class="timer">
+        <div class="timer-title">
+          <div class="timer-section">
+            <p id="title-days">DAYS</p>
+            <h2 id="days">10</h2>
+          </div>
+          <div class="timer-section">
+            <p id="title-hours">HOURS</p>
+            <h2 id="hours">10</h2>
+          </div>
+          <div class="timer-section">
+            <p id="title-minutes">MINUTES</p>
+            <h2 id="minutes">10</h2>
+          </div>
+          <div class="timer-section">
+            <p id="title-seconds">SECONDS</p>
+            <h2 id="seconds">10</h2>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Call to action -->
+      <div class="call-to-action">
+        <h5>Come with us in this journey</h5>
+        <button id="join-now" href="#" class="btn-primary">Join now</button>
+      </div>
+    </div>
+  </section>
+    
+  <section id="image-astronaut">
+    <img src="assets/img/astronaut_saturn.svg" alt="">
+  </section>
+  <!-- Modal -->
+  <div class="modal">
+    <form action="">
+      <div class="close">
+        <a id="close-btn" href="#" class="btn-secondary">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48"><path d="m12.45 37.95-2.4-2.4L21.6 24 10.05 12.45l2.4-2.4L24 21.6l11.55-11.55 2.4 2.4L26.4 24l11.55 11.55-2.4 2.4L24 26.4Z"/></svg>
+        </a>
+      </div>
+      <div class="content">
+        <h4>Join now</h4>
+        <div class="form-inputs">
+          <input type="text" placeholder="Nome completo" />
+          <input type="text" placeholder="Digite seu e-mail" />
+          <input type="number" placeholder="Telefone" />
+        </div>
+        <button class="btn-primary">Send</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Import Scripts -->
+  <script src="assets/modal.js"></script>
+  <script src="assets/countdown.js"></script>
+</body>
+</html>
